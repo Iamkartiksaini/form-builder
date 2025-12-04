@@ -1,23 +1,44 @@
-# form-builder
+# Form Builder
 
-Custom Form Validator
+A **Custom Form Validator** with dynamic field handling and real-time validation.
 
----- Functionalities ----
+🔗 **Live Preview:** [https://form-builder-delta-rosy.vercel.app/](https://form-builder-delta-rosy.vercel.app/)
 
-- Fields validating - text, number, date, select, pattern based fields,
-- scroll on first error field
-- show one error of a field at a time
-- adding and removing dependent fields from dom and submit payload according to conditions
-- showing error message if field error occured
-- Live Preview
+---
 
----- In Complete Functionalities ----
+## 🚀 Features
 
-- save draft
-  unable to implement this feature due to time limit
+### ✔️ Completed Functionalities
 
-- dialog live preview
-  unable to implement this feature due to time limit
+* **Field Validation**
+  Supports validation for:
 
-  - Typescript
-    Have'nt much knowledge of typescript and it will consume more time
+  * Text
+  * Number
+  * Date
+  * Select
+  * Pattern-based inputs
+* **Auto Scroll to First Error**
+  Automatically brings the first invalid field into view.
+* **Single Error Display per Field**
+  Prevents clutter by showing only the relevant error message.
+* **Dynamic Dependent Fields**
+  Add or remove fields from the DOM based on conditions, and update the submit payload accordingly.
+* **Error Messaging**
+  Displays clear, contextual error messages when validation fails.
+* **Live Preview**
+  View updates instantly as fields change.
+
+---
+
+## 🚧 Incomplete / Pending Features
+
+* **Save Draft**
+  Could not be implemented due to time constraints.
+
+* **Dialog-based Live Preview**
+  Planned feature but not completed.
+
+* **TypeScript Support**
+  Limited experience with TypeScript and needed additional time for proper implementation.
+

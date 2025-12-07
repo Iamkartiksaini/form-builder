@@ -13,7 +13,7 @@ export default function Result() {
     return (<Fragment>
         {formData.length > 0 && (
             <div className="bg-blue-50/80 border border-blue-200 rounded-xl px-6 py-4 animate-in fade-in slide-in-from-top-4 duration-300">
-                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                     <div>
                         <h4 className="font-bold text-blue-900 flex items-center gap-2 text-lg">
                             <Eye size={20} /> Submit Form Preview

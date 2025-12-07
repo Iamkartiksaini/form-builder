@@ -115,7 +115,12 @@ function RenderFields({ fieldSchema, formState, errors, onChangeHandler }) {
               const isCheck = e.target?.checked
               onChangeHandler(field, isCheck)
             } else {
-              onChangeHandler(field, currentValue)
+              if (type == "number" && typeof currentValue == "string") {
+                onChangeHandler(field, Number(currentValue));
+              }
+              else {
+                onChangeHandler(field, currentValue);
+              }
             }
           }} disabled={isFieldDisabled}
           value={value}

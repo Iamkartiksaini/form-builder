@@ -322,6 +322,11 @@ export default function useForm({ defaultValues = INIT_VALUES, schema = [] }: Us
                     }
                 });
 
+                // For Optional value
+                if (!fieldCurrentValue && !fieldValidation.includes("isRequired")) {
+                    fieldError.clear()
+                }
+
                 // Getting only first error of the field
                 const firstEntry = fieldError?.entries()?.next()?.value || null;
                 if (firstEntry) {
